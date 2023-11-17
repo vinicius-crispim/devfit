@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import { colors } from "../styles/Colors";
+import { Colors } from "../styles/colors";
 import LatoRegular from '../styles/fonts/Lato-Bold.ttf';
 import LatoBold from '../styles/fonts/Lato-Bold.ttf';
 
@@ -15,13 +15,13 @@ const GlobalStyle = createGlobalStyle`
   html {
       line-height: 1.15; 
       -webkit-text-size-adjust: 100%; 
-      font-family: LatoRegular;
       scroll-behavior: smooth;
     }
     body {
+      font-family: LatoRegular, 'sans-serif';
       margin: 0;
       min-height: 100vh;
-      color: ${colors.black};
+      color: ${Colors.black};
     }
     main {
       display: block;

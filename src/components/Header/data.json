@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "titulo": "Início",
+        "link":"inicio"
+    },
+    {
+        "id": 2,
+        "titulo": "Seja um franqueado",
+        "link":"sejafranqueado"
+    },
+    {
+        "id": 3,
+        "titulo": "Planos",
+        "link":"planos"
+    },
+    {
+        "id": 4,
+        "titulo": "Contato",
+        "link":"contato"
+    },
+    {
+        "id": 5,
+        "titulo": "Sobre nós",
+        "link":"sobre"
+    }
+]
