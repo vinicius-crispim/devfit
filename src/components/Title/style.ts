@@ -8,3 +8,4 @@ export const TitleStyled = styled.h2`
     color: ${Colors.orange_web};
     letter-spacing: 4px;
 `
+
