@@ -5,6 +5,7 @@ export const Colors = {
     background_black_opacity: 'rgba(249, 249, 247, .1)',
     dark_blue: '#14213D',
     orange_web: '#FCA311',
+    dark_orange_web: '#f06C00',
     platinum: '#F9F9F7'
 };
     

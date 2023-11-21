@@ -3,9 +3,8 @@ import img from '../../assets/wave_background.png'
 import { Colors } from "../../styles/colors";
 
 export const FooterStyled = styled.footer`
-    width: 100vw;
+    width: 100%;
     background-image: url(${img});
-    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center;

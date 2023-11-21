@@ -73,6 +73,7 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
         gap: 8px;
         height: auto;
         position: fixed;
+        z-index: 1;
         top:95px;
         right: ${props => props.$isOpen ? '-32px' : '-250px' };
         display: flex;
