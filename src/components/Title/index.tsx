@@ -1,6 +1,10 @@
 import { TitleStyled } from "./style";
+interface TitleProps {
+    children: React.ReactNode
+}
 
-const Title = ({children}:{children:string}) => {
+
+const Title: React.FC<TitleProps> = ({ children }) => {
     return <TitleStyled>{children}</TitleStyled>
 }
 

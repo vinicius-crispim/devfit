@@ -21,9 +21,12 @@ export const HeaderStyled = styled.header`
     }
 
     @media ${Breakpoints.mobile}{
-        position: relative;
+        position: fixed;
         height:120px;
-        justify-content: space-between;
+        width:100%;
+        z-index: 1;
+        justify-content: space-around;
+        padding: 0;
     }
     
 `

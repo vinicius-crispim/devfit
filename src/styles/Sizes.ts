@@ -1,6 +1,6 @@
 export const Spaces = {
-    py_default:'16px',
-    px_desktop_default:'4rem',
+    py_default:'24px',
+    px_desktop_default:'3rem',
     px_desktopXSM_default:'2rem',
 }
 

@@ -7,5 +7,7 @@ export const TitleStyled = styled.h2`
     text-transform: uppercase;
     color: ${Colors.orange_web};
     letter-spacing: 4px;
+    font-family: 'LatoBold';
+    font-weight: 600;
 `
 

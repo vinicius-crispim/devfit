@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import { Colors } from "../styles/colors";
-import LatoRegular from '../styles/fonts/Lato-Bold.ttf';
+import LatoRegular from '../styles/fonts/Lato-Regular.ttf';
 import LatoBold from '../styles/fonts/Lato-Bold.ttf';
 
 const GlobalStyle = createGlobalStyle`
@@ -18,7 +18,7 @@ const GlobalStyle = createGlobalStyle`
       scroll-behavior: smooth;
     }
     body {
-      font-family: LatoRegular, 'sans-serif';
+      font-family: 'LatoRegular', 'sans-serif';
       margin: 0;
       min-height: 100vh;
       color: ${Colors.black};
