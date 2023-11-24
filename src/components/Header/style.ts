@@ -10,7 +10,7 @@ export const HeaderStyled = styled.header`
     align-items: center;
     flex-wrap: wrap;
     background-color:${Colors.background_black};
-
+    height: 20vh;
     h1{
         margin: 0;
         height:130px;
@@ -22,7 +22,6 @@ export const HeaderStyled = styled.header`
 
     @media ${Breakpoints.mobile}{
         position: fixed;
-        height:120px;
         width:100%;
         z-index: 1;
         justify-content: space-around;
@@ -68,21 +67,23 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
     @media ${Breakpoints.desktopXSM}{
         position: relative;
         height: 0;
+        bottom: 20px;
     }
     
     @media ${Breakpoints.mobile} {
         transition: .6s;
         flex-direction: column;
-        gap: 8px;
-        height: auto;
+        gap: 12px;
+        height: 180px;
         position: fixed;
         z-index: 1;
-        top:95px;
+        top:130px;
         right: ${props => props.$isOpen ? '-32px' : '-250px' };
         display: flex;
         background: ${Colors.background_black};
-        padding: 16px 52px 12px 12px;
+        padding: 0 52px 0 12px;
         align-items: start;
+        justify-content: center;
         
         li{
             a{

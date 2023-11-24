@@ -7,6 +7,7 @@ import Dance from '../../assets/dancing.png'
 import CadeiraMassagem from '../../assets/cadeira-massagem.png'
 import Plans from './Plans'
 import { Card } from '../../types/plansCard';
+import { Suplement } from "./Supplement";
 export const Home = () => {
   const images = [
     Banner1,
@@ -38,6 +39,7 @@ export const Home = () => {
     <>
       <Slider images={images} interval={5000} />
       <Plans cards={cards} />
+      <Suplement />
     </>
   )
 }

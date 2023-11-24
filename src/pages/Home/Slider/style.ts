@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { Colors } from "../../../styles/colors";
+import { Breakpoints } from "../../../styles/breakpoints";
 
 export const SliderContainer = styled.div`
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 450px;
+    height: 80vh;
 
     .carousel-slide.active {
         opacity: 1;
@@ -22,11 +23,15 @@ export const SliderContainer = styled.div`
     .carousel-button.next {
         right: 20px;
     }
+
+    @media ${Breakpoints.mobile}{
+        padding-top: 20vh;
+    }
 `
 
 export const Slide = styled.div`
     position: absolute;
-    height: 450px;
+    height: 80vh;
     width: 100%;
     transition: opacity 1s ease-in-out;
     opacity: 0;
@@ -34,7 +39,7 @@ export const Slide = styled.div`
 
 export const SlideImg = styled.img`
     width: 100%;
-    height: 450px;
+    height: 80vh;
     object-fit: cover;
 `
 
