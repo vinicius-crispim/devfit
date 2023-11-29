@@ -15,7 +15,7 @@ export const PlansContainer = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     color: ${Colors.text_black};
-    gap:32px;
+    gap:44px;
 `
 
 export const PlanCard = styled.div`
@@ -26,7 +26,8 @@ export const PlanCard = styled.div`
     justify-content: center;
     flex-direction: column;
     border: 0 solid transparent;
-    box-shadow: ${Colors.black} 1px 4px 8px;
+    background-color: ${Colors.background_gray};
+    box-shadow: ${Colors.black} 4px 4px 8px;
     border-radius: 16px;
 
     .plan-info{

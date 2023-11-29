@@ -24,14 +24,14 @@ export const ParagraphStyled = styled.p`
 `
 
 export const SuplementsContainer = styled.div`
-    width: 60%;
+    width: 80%;
     display: flex;
     align-items: center;
     flex-direction: column;
     
     
     @media ${Breakpoints.desktopXSM} {
-        width: 80%;
+        width: 90%;
     }
     @media ${Breakpoints.mobile} {
         width: 100%;
@@ -50,7 +50,7 @@ export const InputStyled = styled.div`
         font-size: 20px;
         margin: 20px;
         width: 100%;
-        background-color: #e4e4e4;
+        background-color: ${Colors.background_gray};
         color: ${Colors.text_black};
         font-weight: 600;
         font-family: 'LatoBold';
@@ -84,7 +84,61 @@ export const InputStyled = styled.div`
 
 export const SuplementsList = styled.ul`
     list-style: none;
-    li{
-        margin: 16px 0;
+    margin-top: 12px;
+    padding: 0 12px;
+    `
+
+export const SuplementItem= styled.li`
+    display: flex;
+    justify-content: center;    
+    align-items:center;
+    border-radius: 8px;
+    border: 0 solid transparent;
+    box-shadow: ${Colors.black} 4px 4px 8px;
+    &:not(:first-child){
+        margin-top: 36px;
     }
+
+    img{
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        object-fit: cover;
+        height: 225px;
+        width: 225px;
+    }
+    
+    background-color: ${Colors.background_gray};
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        height: 225px;
+        p{
+            margin-top: 0;
+            margin-bottom: 4px;
+            padding: 0 16px;
+            text-align:justify
+        }
+        h3{
+            background-color: ${Colors.orange_web};
+            width: 100%;
+            height: auto;
+            margin-bottom: 8px;
+            margin-top: 0;
+            padding: 4px 0;
+            font-family: LatoBold;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        span{
+            letter-spacing: 2px;
+            font-family: LatoBold;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+
+    }
+    
 `
