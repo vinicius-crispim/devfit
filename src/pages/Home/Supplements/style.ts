@@ -27,15 +27,14 @@ export const SuplementsContainer = styled.div`
     width: 80%;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     
-    
     @media ${Breakpoints.desktopXSM} {
-        width: 90%;
-    }
-    @media ${Breakpoints.mobile} {
         width: 100%;
+        flex-direction: row;
     }
+
 `
 
 export const InputStyled = styled.div`
@@ -75,9 +74,12 @@ export const InputStyled = styled.div`
     @media ${Breakpoints.mobile} {
         input {
             font-size: 16px;
+            margin-left: 0;
+            margin-right: 0;
         }
         .inputIcon{
             font-size: 20px;
+            right: 15px;
         }
     }
 `
@@ -86,7 +88,15 @@ export const SuplementsList = styled.ul`
     list-style: none;
     margin-top: 12px;
     padding: 0 12px;
-    `
+
+    @media ${Breakpoints.desktopXSM}{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+    }
+`
 
 export const SuplementItem= styled.li`
     display: flex;
@@ -95,10 +105,13 @@ export const SuplementItem= styled.li`
     border-radius: 8px;
     border: 0 solid transparent;
     box-shadow: ${Colors.black} 4px 4px 8px;
+    background-color: ${Colors.background_gray};
+    max-height: 700px;
+
     &:not(:first-child){
         margin-top: 36px;
     }
-
+    
     img{
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
@@ -107,19 +120,19 @@ export const SuplementItem= styled.li`
         width: 225px;
     }
     
-    background-color: ${Colors.background_gray};
     div{
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
         text-align: center;
         height: 225px;
         p{
             margin-top: 0;
-            margin-bottom: 4px;
-            padding: 0 16px;
-            text-align:justify
+            margin-bottom: 42px;
+            padding: 0 24px;
+            text-align:justify;
+            line-height: 1.3;
         }
         h3{
             background-color: ${Colors.orange_web};
@@ -138,9 +151,58 @@ export const SuplementItem= styled.li`
             font-weight: 600;
             margin-bottom: 24px;
         }
-
     }
     
+    @media ${Breakpoints.desktopXSM} {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 580px;
+
+        &:not(:first-child){
+            margin-top: 0;
+        }
+        
+        div{
+            width: 275px;
+        }
+
+        img{
+            object-fit: fill;
+            margin-bottom: 24px;
+        }
+
+        div{
+            height: 100%;
+        }
+
+        div h3{
+            letter-spacing: 1px;
+        }
+
+        div p{
+            padding: 0 16px;
+            margin-top: 8px;
+            margin-bottom: 0;
+            height: 200px;
+        }
+    }
+
+    @media ${Breakpoints.mobile}{
+        width: 250px;
+
+        div{
+            width: 250px;
+        }
+
+        h3{
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        div p {
+            font-size: 14px;
+        }
+    }
 `
 
 export const ShowMoreBtn = styled.button`

@@ -5,7 +5,7 @@ import Banner3 from '../../assets/promo-banner-3.png';
 import Arginine from '../../assets/suplements/Arginine.png';
 import BCAA from '../../assets/suplements/BCAA.png';
 import BetaAlanine from '../../assets/suplements/Beta-alanine.png';
-import Creatine from '../../assets/suplements/Creatine_monohydrate.png';
+import Creatine from '../../assets/suplements/Creatine.png';
 import Glutamine from '../../assets/suplements/Glutamine.png';
 import Multivitamin from '../../assets/suplements/Multivitamin.png';
 import PreWorkout from '../../assets/suplements/pre-workout.png';

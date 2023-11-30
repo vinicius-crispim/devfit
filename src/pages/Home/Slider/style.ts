@@ -27,6 +27,9 @@ export const SliderContainer = styled.div`
     @media ${Breakpoints.mobile}{
         padding-top: 20vh;
     }
+    @media ${Breakpoints.desktopXSM}{
+        height: 75vh;
+    }
 `
 
 export const Slide = styled.div`

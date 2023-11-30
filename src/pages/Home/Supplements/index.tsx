@@ -30,36 +30,35 @@ export const Suplements: React.FC<SuplementProps> = ({ suplements }) => {
         <S.SuplementSection>
             <Title>Suplementos</Title>
             <S.ParagraphStyled>Revendemos suplementos, adquira direto conosco!</S.ParagraphStyled>
-            <S.SuplementsContainer>
                 <S.InputStyled>
                     <input placeholder="Buscar" type="text" />
                     <IoIosSearch className="inputIcon" />
                 </S.InputStyled>
+            <S.SuplementsContainer>
                 <S.SuplementsList>
                     {
                         showSuplements.map((suplement, index) => {
                             return (
                                 <S.SuplementItem key={index}>
+                                    <img src={suplement.image} alt={suplement.name} />
                                     <div>
-                                        <img src={suplement.image} alt={suplement.name} />
-                                    </div>
-                                    <div>
-                                        <h3>{suplement.name}</h3>
+                                        <h3>{suplement.name} - <span>R${suplement.price}</span></h3>
+                                        <div>
                                         <p>{suplement.description}</p>
-                                        <span>R${suplement.price}</span>
+                                        </div>
                                     </div>
                                 </S.SuplementItem>
                             );
                         })
                     }
                 </S.SuplementsList>
+            </S.SuplementsContainer>
                 <S.ShowMoreBtn onClick={() => {
                     setShowAll(!showAll);
                     console.log(showAll);
                 }}>
                     {showAll ? 'Ver menos' : 'Ver mais'}
                 </S.ShowMoreBtn>
-            </S.SuplementsContainer>
         </S.SuplementSection>
     )
 }

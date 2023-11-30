@@ -34,7 +34,6 @@ export const NavStyled = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     
 `
 
@@ -65,9 +64,11 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
     }
 
     @media ${Breakpoints.desktopXSM}{
-        position: relative;
-        height: 0;
-        bottom: 20px;
+        gap: 1rem;
+
+        li a {
+            letter-spacing: 1px;
+        }
     }
     
     @media ${Breakpoints.mobile} {
