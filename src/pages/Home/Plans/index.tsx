@@ -1,6 +1,5 @@
 import Title from "../../../components/Title";
 import * as S from './style';
-import Teste from '../../../assets/machines-1.png'
 import { Card } from "../../../types/plansCard";
 
 interface PlansProps {
@@ -13,7 +12,7 @@ export const Plans:React.FC<PlansProps> = ({cards}) => {
             <S.PlansContainer>
                 {cards.map((card, index) => {
                     return (
-                        <S.PlanCard>
+                        <S.PlanCard key={index}>
                             <img src={card.image} alt={card.title} />
                             <h3>{card.title}</h3>
                             <div className="plan-info">

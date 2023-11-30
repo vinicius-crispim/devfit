@@ -142,3 +142,21 @@ export const SuplementItem= styled.li`
     }
     
 `
+
+export const ShowMoreBtn = styled.button`
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px ${Colors.background_black};
+    margin: 24px 0;
+    transition: .3s;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: ${Colors.background_gray};
+    letter-spacing: 1px;
+    &:hover{
+        background-color: ${Colors.background_gray};
+        letter-spacing: 2px;
+        font-size: 22px;
+    }
+`
