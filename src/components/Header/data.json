@@ -11,16 +11,11 @@
     },
     {
         "id": 3,
-        "titulo": "Planos",
-        "link":"planos"
-    },
-    {
-        "id": 4,
         "titulo": "Contato",
         "link":"contato"
     },
     {
-        "id": 5,
+        "id": 4,
         "titulo": "Sobre nós",
         "link":"sobre"
     }

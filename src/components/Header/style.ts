@@ -75,10 +75,10 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
         transition: .6s;
         flex-direction: column;
         gap: 12px;
-        height: 180px;
+        height: 150px;
         position: fixed;
         z-index: 1;
-        top:130px;
+        top:85px;
         right: ${props => props.$isOpen ? '-32px' : '-250px' };
         display: flex;
         background: ${Colors.background_black};
