@@ -222,3 +222,9 @@ export const ShowMoreBtn = styled.button`
         font-size: 22px;
     }
 `
+
+export const ErroMsg = styled.p`
+    font-size: 16px;
+    letter-spacing: 2px;
+    
+`

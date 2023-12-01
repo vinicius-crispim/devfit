@@ -4,7 +4,6 @@ import { IoIosSearch } from "react-icons/io";
 import React, { useEffect } from 'react';
 import { Suplement } from '../../../types/suplement';
 import { useState } from 'react';
-import { log } from "console";
 
 interface SuplementProps {
     suplements: Suplement[];
@@ -31,7 +30,7 @@ export const Suplements: React.FC<SuplementProps> = ({ suplements }) => {
 
 
 
-        console.log(showSuplements.filter(item => findSup(item.name)))
+        console.log(showSuplements.length)
     }, [showAll, searchSup])
 
     return (
@@ -47,6 +46,7 @@ export const Suplements: React.FC<SuplementProps> = ({ suplements }) => {
             <S.SuplementsContainer>
                 <S.SuplementsList>
                     {
+                        showSuplements.length > 0 ?
                         showSuplements.map((suplement, index) => {
                             return (
                                 <S.SuplementItem key={index}>
@@ -59,7 +59,8 @@ export const Suplements: React.FC<SuplementProps> = ({ suplements }) => {
                                     </div>
                                 </S.SuplementItem>
                             );
-                        })
+                        }):
+                        <S.ErroMsg>Suplemento não encontrado.</S.ErroMsg>
                     }
                 </S.SuplementsList>
             </S.SuplementsContainer>
@@ -73,7 +74,7 @@ export const Suplements: React.FC<SuplementProps> = ({ suplements }) => {
     )
 }
 
-function showQtd(showAll: boolean, suplements: Suplement[], setShowSuplements: React.Dispatch<React.SetStateAction<Suplement[]>>, btn:HTMLButtonElement) {
+function showQtd(showAll: boolean, suplements: Suplement[], setShowSuplements: React.Dispatch<React.SetStateAction<Suplement[]>>, btn: HTMLButtonElement) {
     if (showAll === true) {
         for (let x = 0; x < suplements.length; x++) {
             let sup: Suplement = suplements[x];
