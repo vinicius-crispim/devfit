@@ -22,6 +22,7 @@ const GlobalStyle = createGlobalStyle`
       margin: 0;
       min-height: 100vh;
       color: ${Colors.black};
+      background-color: ${Colors.background_white};
     }
     main {
       display: block;
