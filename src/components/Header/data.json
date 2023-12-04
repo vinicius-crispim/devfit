@@ -2,7 +2,7 @@
     {
         "id": 1,
         "titulo": "Início",
-        "link":"inicio"
+        "link":"/"
     },
     {
         "id": 2,
@@ -17,6 +17,6 @@
     {
         "id": 4,
         "titulo": "Sobre nós",
-        "link":"sobre-nos"
+        "link":"sobrenos"
     }
 ]

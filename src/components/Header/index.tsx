@@ -9,7 +9,7 @@ const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     return (
         <S.HeaderStyled>
-            <h1><a href="#home"><img src={Logo} alt="DevFit" /></a></h1>
+            <h1><Link to="/"><img src={Logo} alt="DevFit" /></Link></h1>
             <S.NavStyled>
                 <S.MenuBtn $isOpen={isOpen} onClick={() => {
                     setIsOpen(!isOpen);
