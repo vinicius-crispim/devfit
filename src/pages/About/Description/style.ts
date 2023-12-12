@@ -59,7 +59,7 @@ export const ParagraphStyled = styled.p`
     margin: 12px auto;
     line-height: 1.5;
     font-size: 18px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: ${Colors.text_black};
     text-align:justify;
     font-weight: 600;
@@ -92,13 +92,15 @@ export const ParagraphStyled = styled.p`
 
     @media ${Breakpoints.mobile}{
         line-height: 1.2;
+        font-size: 16px;
+
         &:first-child, &:last-child{
-            top:20px;
+            top:42px;
         }
         
         &:last-child{
-            top:8px;
-            margin-bottom: 16px;
+            top:40px;
+            margin-bottom: 46px;
         }
         width: 100%;
     }

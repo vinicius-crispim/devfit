@@ -11,7 +11,7 @@ const Features: React.FC<FeaturesProps> = ({ featuresList }) => {
         <S.FeaturesContainer>
             <S.FeaturesList>
                 {featuresList.map(feature => {
-                    
+
                     return (
                         <S.FeaturesList_Item key={feature.id} $direction={feature.id % 2 === 0}>
                             <div>
@@ -24,14 +24,13 @@ const Features: React.FC<FeaturesProps> = ({ featuresList }) => {
                         </S.FeaturesList_Item>
                     )
                 })}
-                {/* <S.FeaturesList_Item>
-                    <h3>TESTE</h3>
-                    <p>
-                        Bem-vindo à DevFit, sua rede de academias dedicaaaaa, nossas instalações oferecem um ambiente acolhedor e
-                        inspirador para atender você da melhor maneira possível.
-                    </p>
-                </S.FeaturesList_Item>*/}
             </S.FeaturesList>
+            <S.FinalParagraph>
+                Junte-se à DevFit e descubra uma abordagem única para o fitness, 
+                onde o desenvolvimento pessoal e a saúde se encontram. Estamos 
+                ansiosos para ser parte da sua jornada para uma vida mais 
+                equilibrada e realizada. <span>DevFit - Transforme-se, Supere-se!</span>
+            </S.FinalParagraph>
         </S.FeaturesContainer>
     )
 }

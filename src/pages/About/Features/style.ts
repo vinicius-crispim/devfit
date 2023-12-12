@@ -4,7 +4,10 @@ import { Colors } from "../../../styles/colors";
 import { Breakpoints } from "../../../styles/breakpoints";
 
 export const FeaturesContainer = styled.section`
-    padding: ${Spaces.py_default} ${Spaces.px_desktopXSM_default};
+    padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `
 
 export const FeaturesList = styled.ul`
@@ -58,4 +61,26 @@ export const FeaturesList_Item = styled.li<{$direction?: boolean; }>`
         }
     }
 
+    @media ${Breakpoints.mobile}{
+        margin: 12px 0;
+        padding: 0;
+    }
+
+`
+
+export const FinalParagraph = styled.p`
+    text-align:justify;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    font-size: 1.25rem;
+    width: 90%;
+
+    span{
+        font-family: LatoBold;
+        font-weight: 600;
+    }
+
+    @media ${Breakpoints.mobile}{
+        width: 100%;
+    }
 `
