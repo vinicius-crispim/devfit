@@ -13,19 +13,26 @@ export const HeaderStyled = styled.header`
     height: 20vh;
     h1{
         margin: 0;
-        height:130px;
     }
 
     @media ${Breakpoints.desktopXSM}{
-        padding: 0 ${Spaces.px_desktopXSM_default};
+        padding-bottom: 0;
     }
 
     @media ${Breakpoints.mobile}{
         position: fixed;
+        top:0;
         width:100%;
         z-index: 1;
         justify-content: space-around;
         padding: 0;
+
+        h1{
+            height: 110px;
+            img{
+                height: 110px;
+            }
+        }
     }
     
 `
@@ -78,7 +85,7 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
         height: 150px;
         position: fixed;
         z-index: 1;
-        top:85px;
+        top:125px;
         right: ${props => props.$isOpen ? '-32px' : '-250px' };
         display: flex;
         background: ${Colors.background_black};

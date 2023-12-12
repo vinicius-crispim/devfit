@@ -3,8 +3,8 @@ import * as S from './style'
 const Load = () => {
     return (
         <S.LoadContainer>
-            <Title>Carregando...</Title>
             <S.Load></S.Load>
+            <Title>Carregando...</Title>
         </S.LoadContainer>
     )
 }

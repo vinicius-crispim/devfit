@@ -28,7 +28,7 @@ export const SliderContainer = styled.div`
         padding-top: 20vh;
     }
     @media ${Breakpoints.desktopXSM}{
-        height: 75vh;
+        height: 80vh;
     }
 `
 

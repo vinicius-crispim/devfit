@@ -1,19 +1,18 @@
 import styled from "styled-components";
+import { Colors } from "../../styles/colors";
 
 export const LoadContainer = styled.div`
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      background-color: #f4f4f4;
-      flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    flex-direction: column;
 `   
 
 export const Load = styled.div`
     
-    border: 8px solid #3498db;
-    border-top: 8px solid #ffffff;
+    border: 6px solid ${Colors.dark_orange_web};
+    border-top: 6px solid transparent;
     border-radius: 50%;
     width: 50px;
     height: 50px;

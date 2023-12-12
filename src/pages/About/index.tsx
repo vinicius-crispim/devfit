@@ -1,11 +1,11 @@
-import Title from "../../components/Title";
-
+import Description from "./Description";
+import Features from "./Features";
+import featuresList from './data.json'
 const About = () => {
     return (
         <>
-            <Title>
-                Sobre nós    
-            </Title> 
+            <Description/>
+            <Features featuresList={featuresList}/>
         </>
     )
 }

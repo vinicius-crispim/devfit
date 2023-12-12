@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "title":"Treinamento Personalizado",
+        "description":"Oferecemos treinamento personalizado para garantir que seus objetivos sejam alcançados de maneira segura e eficaz. Na DevFit, acreditamos que a jornada para uma vida mais saudável é única para cada indivíduo, e estamos comprometidos em ajudar você a atingir seu melhor potencial."
+    },
+    {
+        "id":2,
+        "title":"Inovação Tecnológica",
+        "description":"Na era da tecnologia, a DevFit destaca-se pela integração de inovações tecnológicas em nossos programas de treinamento. Utilizamos dispositivos inteligentes, aplicativos personalizados e rastreamento de progresso para otimizar sua experiência e maximizar os resultados."
+    },
+    {
+        "id":3,
+        "title":"Comunidade Unida",
+        "description":"A DevFit é mais do que uma academia; somos uma comunidade unida por objetivos comuns de saúde e bem-estar. Oferecemos eventos sociais, desafios de equipe e programas de incentivo para criar um ambiente de apoio e camaradagem"
+    },
+    {
+        "id":4,
+        "title":"Compromisso Sustentável",
+        "description":"Além de cuidar de você, nos preocupamos com o nosso planeta. Comprometemo-nos a adotar práticas sustentáveis em nossas operações para preservar o meio ambiente e contribuir para um futuro mais verde."
+    }
+]

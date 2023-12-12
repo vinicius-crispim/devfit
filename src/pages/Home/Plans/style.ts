@@ -6,7 +6,6 @@ import { Breakpoints } from "../../../styles/breakpoints";
 
 export const PlansSection = styled.section`
     padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
-    background-color: ${Colors.background_white};
 `
 
 export const PlansContainer = styled.div`

@@ -5,7 +5,7 @@ export const Spaces = {
 }
 
 export const FontsSizes = {
-    nav_title_desktop: '1.1rem',
+    nav_title_desktop: '1.2rem',
     nav_title_mobile: '1rem',
     title_desktop: '1.75rem',
     subtitle_desktop: '1.25rem',
