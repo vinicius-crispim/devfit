@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Colors } from "../../../styles/colors";
 import { Breakpoints } from "../../../styles/breakpoints";
 
-export const SliderContainer = styled.div`
+export const SliderContainer = styled.section`
     position: relative;
     overflow: hidden;
     width: 100%;

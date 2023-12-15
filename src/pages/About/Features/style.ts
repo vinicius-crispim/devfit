@@ -37,7 +37,7 @@ export const FeaturesList_Item = styled.li<{$direction?: boolean; }>`
         text-align: center;
         margin: 0;
         color: ${Colors.orange_web};
-        font-size: 24px;
+        font-size: 28px;
         filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4));
 
         letter-spacing: 6px;
@@ -64,6 +64,10 @@ export const FeaturesList_Item = styled.li<{$direction?: boolean; }>`
     @media ${Breakpoints.mobile}{
         margin: 12px 0;
         padding: 0;
+
+        h3{
+            margin: 12px 0;
+        }
     }
 
 `

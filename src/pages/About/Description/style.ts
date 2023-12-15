@@ -3,7 +3,8 @@ import { Breakpoints } from "../../../styles/breakpoints";
 import { Colors } from "../../../styles/colors";
 import { Spaces } from "../../../styles/Sizes";
 import Background from '../../../assets/background-about.png'
-export const DescriptionContainer = styled.div`
+
+export const DescriptionContainer = styled.section`
     padding: 0 ${Spaces.px_desktop_default};
     position: relative;
     top: 0;

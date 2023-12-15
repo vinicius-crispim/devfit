@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 
 const Home = lazy(() => import('./pages/Home'));
 const About = lazy(() => import('./pages/About'));
+const Partner = lazy(() => import('./pages/Partner'));
 const Load = lazy(() => import('./pages/Load'));
 
 const AppRouter = () => {
@@ -18,6 +19,7 @@ const AppRouter = () => {
                             <Route index element={<Home/>} />
                             <Route path='contato' element={<Load/>}/>
                             <Route path='sobrenos' element={<About/>}/>
+                            <Route path='seja-franqueado' element={<Partner/>}/>
                         </Route>
                     </Routes>
                     <Footer/>
