@@ -9,6 +9,9 @@ export const Colors = {
     dark_blue: '#14213D',
     orange_web: '#FCA311',
     dark_orange_web: '#f06C00',
-    platinum: '#F9F9F7'
+    platinum: '#F9F9F7',
+    red_button:'#E80000',
+    red_button_hover:'#900D0D',
+
 };
     

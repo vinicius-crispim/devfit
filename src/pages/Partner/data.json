@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "name": "Equipamentos de Qualidade",
+        "description": "Nossas franquias terão os melhores equipamentos disponíveis para que seus alunos consigam usufruir da melhor maneira possível e se desenvolver mais rápido e com mais segurança.",
+        "image":"../../../assets/benefits/gym-machines.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ambiente Acolhedor",
+        "description": "Uma boa academia não se faz somente com equipamentos de qualidade, acreditamos que é fundamental a ambientação do local, por isso proporcionamos um ambiente excelente para todos.",
+        "image":"../../../assets/benefits/gym-environment.jpg"
+    }
+    
+]

@@ -11,7 +11,7 @@ const Banner = () => {
                 <S.ButtonStyled>Quero fazer parte</S.ButtonStyled>
             </div>
             <div>
-                <img src={PartnerImage} alt="Atleta feminia em uma academia" />
+                <img src={PartnerImage} alt="Atleta feminina em uma academia" />
             </div>
         </S.BannerSection>
     )

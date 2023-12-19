@@ -105,10 +105,10 @@ export const ButtonStyled = styled.button`
     border-radius: 22px;
     padding: 12px 16px;
     width: 80%;
-    background-color: #E80000;
+    background-color: ${Colors.red_button};
     
     &:hover{
-        background-color: #900D0D;
+        background-color: ${Colors.red_button_hover};
         cursor: pointer;
     }
 
