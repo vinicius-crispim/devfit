@@ -7,6 +7,7 @@ import GymFacade from '../../assets/benefits/gym-facade.jpg'
 import GymSocialMedias from '../../assets/benefits/gym-social-medias.jpg'
 import GymSupport from '../../assets/benefits/gym-support.jpg'
 import GymApp from '../../assets/benefits/gym-app.jpg'
+import Reasons from './Reasons';
 
 const benefitsList:Benefit[] = [
     {
@@ -52,6 +53,7 @@ const Partner = () => {
         <>
             <Banner/>
             <Benefits benefitsList={benefitsList}/>
+            <Reasons/>
         </>
     )
 }

@@ -12,6 +12,6 @@ export const Colors = {
     platinum: '#F9F9F7',
     red_button:'#E80000',
     red_button_hover:'#900D0D',
-
+    graph_green: '#3CB043'
 };
     

@@ -48,7 +48,7 @@ export const BenefitsList = styled.ul`
     }
     li{
         display: inline-block;
-        padding: 0 8px 28px;
+        padding: 0 8px 32px;
         &:last-child{
             margin-right: 8px;
         }
@@ -58,18 +58,14 @@ export const BenefitsList = styled.ul`
     }
     @media ${Breakpoints.mobile}{
         width: 100%;
-        gap: 8px;
+        gap: 12px;
         flex-direction:row;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         overflow-x: hidden;
 
-        li{
-            width: 275px;
-            max-height: 480px;
-
-        }
+       
     }
 `
 
