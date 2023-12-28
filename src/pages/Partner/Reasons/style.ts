@@ -37,7 +37,7 @@ export const ImgContainer = styled.div`
 export const ReaonsList = styled.ul`
     list-style: none;
     width: 50%;
-
+    padding-left: 0;
     li{
         display: flex;
         align-items: center;
@@ -72,6 +72,9 @@ export const ReaonsList = styled.ul`
 
         li{
             margin-left: 0;
+            p{
+                padding-right: 0;
+            }
         }
     }
 `
@@ -79,4 +82,9 @@ export const ReaonsList = styled.ul`
 export const IconContainer = styled.div`
     height: 25px;
     width: 25px;
+
+    @media ${Breakpoints.mobile}{
+
+        margin-right: 16px;
+    }
 `

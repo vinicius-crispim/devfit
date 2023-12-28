@@ -10,8 +10,8 @@ export const Colors = {
     orange_web: '#FCA311',
     dark_orange_web: '#f06C00',
     platinum: '#F9F9F7',
-    red_button:'#E80000',
-    red_button_hover:'#900D0D',
+    red_button:'#F9090F',
+    red_button_hover:'#E80F20',
     graph_green: '#3CB043'
 };
     

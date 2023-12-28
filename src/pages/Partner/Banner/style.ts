@@ -108,6 +108,7 @@ export const ButtonStyled = styled.button`
     background-color: ${Colors.red_button};
     
     &:hover{
+        transition: .3s all;
         background-color: ${Colors.red_button_hover};
         cursor: pointer;
     }
