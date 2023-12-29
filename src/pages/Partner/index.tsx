@@ -42,7 +42,7 @@ const benefitsList:Benefit[] = [
         image: GymSupport
     },
     {
-        id: 5,
+        id: 6,
         name: "Acesso a Tecnologia Inovadora",
         description: "Oferecemos acesso a plataformas tecnológicas inovadoras, como aplicativos de treino personalizado, monitoramento de desempenho e programas de fidelidade.",
         image: GymApp
