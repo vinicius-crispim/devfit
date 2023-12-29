@@ -97,14 +97,17 @@ export const BannerSection = styled.section`
     }
 `
 
-export const ButtonStyled = styled.button`
+export const ButtonStyled = styled.a`
     border: transparent;
     color: white;
+    text-align: center;
+    text-decoration: none;
     font-size: 20px;
     letter-spacing: 4px;
     border-radius: 22px;
     padding: 12px 16px;
     width: 80%;
+    box-shadow: 2px 2px 6px ${Colors.red_button_hover};
     background-color: ${Colors.red_button};
     
     &:hover{

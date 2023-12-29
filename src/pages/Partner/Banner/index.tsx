@@ -8,7 +8,7 @@ const Banner = () => {
             <div>
                 <Title>Torne-se um parceiro da DevFit</Title>
                 <span>e nos ajude a crescer, evoluir e impactar ainda mais vidas com nosso trabalho!</span>
-                <S.ButtonStyled>Quero fazer parte</S.ButtonStyled>
+                <S.ButtonStyled href='#contato'>Quero fazer parte</S.ButtonStyled>
             </div>
             <div>
                 <img src={PartnerImage} alt="Atleta feminina em uma academia" />

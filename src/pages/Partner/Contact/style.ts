@@ -87,9 +87,10 @@ export const ContactFormButton = styled.button`
     color: white;
     letter-spacing: 4px;
     background-color: ${Colors.red_button};
+    box-shadow: 2px 2px 6px ${Colors.red_button_hover};
 
     &:hover{
-        transition: .6s all;
+        transition: .5s;
         letter-spacing: 6px;
         background-color: ${Colors.red_button_hover};
         cursor: pointer;

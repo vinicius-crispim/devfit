@@ -4,7 +4,7 @@ import * as S from './style'
 import emailjs from '@emailjs/browser'
 const Contact = () => {
     return (
-        <S.ContactSection>
+        <S.ContactSection id='contato'>
             <Title>Entre em Contato!</Title>
             <p>Complete o formulário que nós olharemos e faremos uma avaliação.</p>
             <S.ContactForm onSubmit={(e) => {
@@ -17,9 +17,9 @@ const Contact = () => {
                     templateId as string,
                     e.target as HTMLFormElement,
                     publicKey)
-                    .then(function (response) {
+                    .then( (response) => {
                         console.log('SUCCESS!', response.status, response.text);
-                    }, function (error) {
+                    }, (error) => {
                         console.log('FAILED...', error);
                     });
 
