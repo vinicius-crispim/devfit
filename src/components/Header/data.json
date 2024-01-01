@@ -11,11 +11,6 @@
     },
     {
         "id": 3,
-        "titulo": "Contato",
-        "link":"contato"
-    },
-    {
-        "id": 4,
         "titulo": "Sobre nós",
         "link":"sobrenos"
     }
