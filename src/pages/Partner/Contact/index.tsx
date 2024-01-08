@@ -1,4 +1,4 @@
-import React, { EventHandler } from 'react'
+import React from 'react'
 import Title from '../../../components/Title'
 import * as S from './style'
 import emailjs from '@emailjs/browser'
