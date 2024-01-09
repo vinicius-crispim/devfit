@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/Sizes";
-import { Colors } from "../../../styles/colors";
-import { Breakpoints } from "../../../styles/breakpoints";
+import { Spaces } from "../../../styles/sizes";
+import { colors } from "../../../styles/colors";
+import { breakpoints } from "../../../styles/breakpoints";
 
 
 export const ReasonsStyled = styled.section`
     padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
     padding-top: 0;
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         padding: ${Spaces.py_default} ${Spaces.px_desktopXSM_default};
     }
 `
@@ -25,11 +25,11 @@ export const ImgContainer = styled.div`
         border-radius: 16px;
     }
     
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         width:45%;
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         display: none;
     }
 `
@@ -53,12 +53,12 @@ export const ReaonsList = styled.ul`
         }
         
         svg{
-            color: ${Colors.graph_green};
+            color: ${colors.graph_green};
             
         }
     }
     
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         width: 55%;
         li{
             p{
@@ -67,7 +67,7 @@ export const ReaonsList = styled.ul`
         }
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         width: 100%;
 
         li{
@@ -83,7 +83,7 @@ export const IconContainer = styled.div`
     height: 25px;
     width: 25px;
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
 
         margin-right: 16px;
     }

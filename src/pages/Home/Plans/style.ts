@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/Sizes";
-import { Colors } from "../../../styles/colors";
-import { Breakpoints } from "../../../styles/breakpoints";
+import { Spaces } from "../../../styles/sizes";
+import { colors } from "../../../styles/colors";
+import { breakpoints } from "../../../styles/breakpoints";
 
 
 export const PlansSection = styled.section`
@@ -13,7 +13,7 @@ export const PlansContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    color: ${Colors.text_black};
+    color: ${colors.text_black};
     gap:44px;
 `
 
@@ -25,8 +25,8 @@ export const PlanCard = styled.div`
     justify-content: center;
     flex-direction: column;
     border: 0 solid transparent;
-    background-color: ${Colors.background_gray};
-    box-shadow: ${Colors.black} 4px 4px 8px;
+    background-color: ${colors.background_gray};
+    box-shadow: ${colors.black} 4px 4px 8px;
     border-radius: 16px;
 
     .plan-info{
@@ -37,7 +37,7 @@ export const PlanCard = styled.div`
     }
 
     h3{
-        background-color: ${Colors.orange_web};
+        background-color: ${colors.orange_web};
         width:100%;
         padding: 8px 0;
         margin: 0;
@@ -64,7 +64,7 @@ export const PlanCard = styled.div`
         border-top-left-radius: 16px;
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         width: 250px;
         img{
         width: 250px;

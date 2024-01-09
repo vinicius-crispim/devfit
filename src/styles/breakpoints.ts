@@ -5,7 +5,7 @@ const size = {
     desktop_md: '1280px',
 }
 
-export const Breakpoints = {
+export const breakpoints = {
     mobile: `(max-width: ${size.mobile_})`,
     desktopXSM: `(max-width: ${size.desktop_xsm})`,
     desktopSM: `(max-width: ${size.desktop_sm})`,

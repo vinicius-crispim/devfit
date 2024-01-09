@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/Sizes";
-import { Breakpoints } from "../../../styles/breakpoints";
-import { Colors } from "../../../styles/colors";
+import { Spaces } from "../../../styles/sizes";
+import { breakpoints } from "../../../styles/breakpoints";
+import { colors } from "../../../styles/colors";
 
 export const BenefitsContainer = styled.section`
     padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
@@ -9,7 +9,7 @@ export const BenefitsContainer = styled.section`
     flex-direction: column;
     align-items: center;
     
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         padding: ${Spaces.py_default} ${Spaces.px_desktopXSM_default};
     }
     `
@@ -25,7 +25,7 @@ export const BenefitsList = styled.ul`
 
     /* Firefox */ 
    scrollbar-width: thin;
-    scrollbar-color: ${Colors.white} ${Colors.black};
+    scrollbar-color: ${colors.white} ${colors.black};
     
     /* Chrome, Edge e Safari */
     &::-webkit-scrollbar {
@@ -35,7 +35,7 @@ export const BenefitsList = styled.ul`
     &::-webkit-scrollbar-track {
       background: white;
       border-radius: 10px;
-      box-shadow:  0 0 10px ${Colors.black};
+      box-shadow:  0 0 10px ${colors.black};
       
     }
     
@@ -53,10 +53,10 @@ export const BenefitsList = styled.ul`
             margin-right: 8px;
         }
     }
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         width: 90%;
     }
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         width: 100%;
         gap: 12px;
         flex-direction:row;
@@ -77,13 +77,13 @@ export const BenefitsCard = styled.div`
     justify-content: center;
     flex-direction: column;
     border: 0 solid transparent;
-    background-color: ${Colors.background_gray};
-    box-shadow: ${Colors.black} 4px 4px 8px;
+    background-color: ${colors.background_gray};
+    box-shadow: ${colors.black} 4px 4px 8px;
     border-radius: 16px;
 
 
     h3{
-        background-color: ${Colors.orange_web};
+        background-color: ${colors.orange_web};
         width:100%;
         padding: 8px 0;
         margin: 0;
@@ -114,7 +114,7 @@ export const BenefitsCard = styled.div`
         height: 200px;
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         width: 250px;
         max-height: 410px;
         img{

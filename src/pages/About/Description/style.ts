@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Breakpoints } from "../../../styles/breakpoints";
-import { Colors } from "../../../styles/colors";
-import { Spaces } from "../../../styles/Sizes";
+import { breakpoints } from "../../../styles/breakpoints";
+import { colors } from "../../../styles/colors";
+import { Spaces } from "../../../styles/sizes";
 import Background from '../../../assets/background-about.png'
 
 export const DescriptionContainer = styled.section`
@@ -40,14 +40,14 @@ export const DescriptionContainer = styled.section`
         justify-content: center;
     }
 
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         h2{
             top: 8px;
             margin-bottom: 0;
         }
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         margin-top: 20vh;
         div{
             gap:2rem;
@@ -61,7 +61,7 @@ export const ParagraphStyled = styled.p`
     line-height: 1.5;
     font-size: 18px;
     letter-spacing: 1px;
-    color: ${Colors.text_black};
+    color: ${colors.text_black};
     text-align:justify;
     font-weight: 600;
     max-width: 600px;
@@ -78,7 +78,7 @@ export const ParagraphStyled = styled.p`
 
     }
     
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         
         &:first-child, &:last-child{
             align-self: center;
@@ -91,7 +91,7 @@ export const ParagraphStyled = styled.p`
         }
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         line-height: 1.2;
         font-size: 16px;
 

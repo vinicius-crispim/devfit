@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Colors } from "../../../styles/colors";
+import { colors } from "../../../styles/colors";
 import background from '../../../assets/partner-background.png'
-import { Spaces } from "../../../styles/Sizes";
-import { Breakpoints } from "../../../styles/breakpoints";
+import { Spaces } from "../../../styles/sizes";
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const BannerSection = styled.section`
     background-image: url(${background});
@@ -63,7 +63,7 @@ export const BannerSection = styled.section`
         }
     }
 
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         
         div:first-child{
             padding: 0 ${Spaces.px_desktopXSM_default};
@@ -86,7 +86,7 @@ export const BannerSection = styled.section`
         }
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         margin-top: 20vh;
         div:first-child{
             width: 100%
@@ -107,16 +107,16 @@ export const ButtonStyled = styled.a`
     border-radius: 22px;
     padding: 12px 16px;
     width: 80%;
-    box-shadow: 2px 2px 6px ${Colors.red_button_hover};
-    background-color: ${Colors.red_button};
+    box-shadow: 2px 2px 6px ${colors.red_button_hover};
+    background-color: ${colors.red_button};
     
     &:hover{
         transition: .3s all;
-        background-color: ${Colors.red_button_hover};
+        background-color: ${colors.red_button_hover};
         cursor: pointer;
     }
 
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         font-size: 18px;
         width: 90%;
     }

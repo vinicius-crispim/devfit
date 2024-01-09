@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Colors } from "../../../styles/colors";
-import { Breakpoints } from "../../../styles/breakpoints";
+import { colors } from "../../../styles/colors";
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const SliderContainer = styled.section`
     position: relative;
@@ -24,10 +24,10 @@ export const SliderContainer = styled.section`
         right: 20px;
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         padding-top: 20vh;
     }
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         height: 80vh;
     }
 `
@@ -54,8 +54,8 @@ export const ButtonSlide = styled.button`
     justify-content: center;
     cursor: pointer;
     padding: 10px;
-    color: ${Colors.black};
-    border: 1px solid ${Colors.black};
+    color: ${colors.black};
+    border: 1px solid ${colors.black};
     border-radius: 50%;
     font-size: 22px;
     transition: background 0.3s;

@@ -1,16 +1,16 @@
 import styled from 'styled-components';
-import { Spaces } from '../../../styles/Sizes';
-import { Colors } from '../../../styles/colors';
-import { Breakpoints } from '../../../styles/breakpoints';
+import { Spaces } from '../../../styles/sizes';
+import { colors } from '../../../styles/colors';
+import { breakpoints } from '../../../styles/breakpoints';
 
 export const SuplementSection = styled.section`
     padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
-    background-color: ${Colors.background_white};
+    background-color: ${colors.background_white};
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         padding: ${Spaces.py_default} ${Spaces.px_desktopXSM_default};
     }
 `
@@ -20,7 +20,7 @@ export const ParagraphStyled = styled.p`
     text-align:center;
     font-size: 22px;
     letter-spacing: 2px;
-    color: ${Colors.text_black};
+    color: ${colors.text_black};
 `
 
 export const SuplementsContainer = styled.div`
@@ -30,7 +30,7 @@ export const SuplementsContainer = styled.div`
     justify-content: center;
     flex-direction: column;
     
-    @media ${Breakpoints.desktopXSM} {
+    @media ${breakpoints.desktopXSM} {
         width: 100%;
         flex-direction: row;
     }
@@ -43,24 +43,24 @@ export const InputStyled = styled.div`
     align-items: center;
     width: 100%;
     input{
-        border: 1px solid ${Colors.background_black};
+        border: 1px solid ${colors.background_black};
         border-radius: 8px;
         padding: 8px 12px;
         font-size: 20px;
         margin: 20px;
         width: 100%;
-        background-color: ${Colors.background_gray};
-        color: ${Colors.text_black};
+        background-color: ${colors.background_gray};
+        color: ${colors.text_black};
         font-weight: 600;
         font-family: 'LatoBold';
         outline: none;
 
         &::placeholder{
-            color: ${Colors.text_black};
+            color: ${colors.text_black};
         }
 
         &:focus{
-            border: 1px solid ${Colors.dark_orange_web};
+            border: 1px solid ${colors.dark_orange_web};
         }
     }
 
@@ -68,10 +68,10 @@ export const InputStyled = styled.div`
         position: absolute;
         right: 32px;
         font-size: 24px;
-        color: ${Colors.dark_orange_web};
+        color: ${colors.dark_orange_web};
     }
     
-    @media ${Breakpoints.mobile} {
+    @media ${breakpoints.mobile} {
         input {
             font-size: 16px;
             margin-left: 0;
@@ -89,7 +89,7 @@ export const SuplementsList = styled.ul`
     margin-top: 12px;
     padding: 0 12px;
 
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         display: flex;
         flex-wrap: wrap;
         gap: 32px;
@@ -104,8 +104,8 @@ export const SuplementItem= styled.li`
     align-items:center;
     border-radius: 8px;
     border: 0 solid transparent;
-    box-shadow: ${Colors.black} 4px 4px 8px;
-    background-color: ${Colors.background_gray};
+    box-shadow: ${colors.black} 4px 4px 8px;
+    background-color: ${colors.background_gray};
     max-height: 700px;
 
     &:not(:first-child){
@@ -135,7 +135,7 @@ export const SuplementItem= styled.li`
             line-height: 1.3;
         }
         h3{
-            background-color: ${Colors.orange_web};
+            background-color: ${colors.orange_web};
             width: 100%;
             height: auto;
             margin-bottom: 8px;
@@ -153,7 +153,7 @@ export const SuplementItem= styled.li`
         }
     }
     
-    @media ${Breakpoints.desktopXSM} {
+    @media ${breakpoints.desktopXSM} {
         flex-direction: column;
         flex-wrap: wrap;
         max-height: 580px;
@@ -187,7 +187,7 @@ export const SuplementItem= styled.li`
         }
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         width: 250px;
 
         div{
@@ -209,15 +209,15 @@ export const ShowMoreBtn = styled.button`
     padding: 8px 12px;
     border-radius: 12px;
     border: 1px solid black;
-    box-shadow: 2px 2px 4px ${Colors.background_black};
+    box-shadow: 2px 2px 4px ${colors.background_black};
     margin: 24px 0;
     transition: .3s;
     cursor: pointer;
     font-size: 18px;
-    background-color: ${Colors.background_gray};
+    background-color: ${colors.background_gray};
     letter-spacing: 1px;
     &:hover{
-        background-color: ${Colors.background_gray};
+        background-color: ${colors.background_gray};
         letter-spacing: 2px;
         font-size: 22px;
     }

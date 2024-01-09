@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/Sizes";
-import { Colors } from "../../../styles/colors";
-import { Breakpoints } from "../../../styles/breakpoints";
+import { Spaces } from "../../../styles/sizes";
+import { colors } from "../../../styles/colors";
+import { breakpoints } from "../../../styles/breakpoints";
 
 export const FeaturesContainer = styled.section`
     padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
@@ -15,11 +15,11 @@ export const FeaturesList = styled.ul`
     padding-left: 0;
     width: 75%;
     
-    @media ${Breakpoints.desktopSM}{
+    @media ${breakpoints.desktopSM}{
         width: 90%; 
     }
     
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         width: 100%; 
     }
 `
@@ -36,7 +36,7 @@ export const FeaturesList_Item = styled.li<{$direction?: boolean; }>`
     h3{ 
         text-align: center;
         margin: 0;
-        color: ${Colors.orange_web};
+        color: ${colors.orange_web};
         font-size: 28px;
         filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4));
 
@@ -53,7 +53,7 @@ export const FeaturesList_Item = styled.li<{$direction?: boolean; }>`
         letter-spacing: 1px;
     }
 
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         flex-direction:column;
 
         p{
@@ -61,7 +61,7 @@ export const FeaturesList_Item = styled.li<{$direction?: boolean; }>`
         }
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         margin: 12px 0;
         padding: 0;
 
@@ -84,7 +84,7 @@ export const FinalParagraph = styled.p`
         font-weight: 600;
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         width: 100%;
     }
 `

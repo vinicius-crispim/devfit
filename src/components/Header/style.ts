@@ -1,25 +1,25 @@
 import styled from "styled-components";
-import { Colors } from "../../styles/colors";
-import { FontsSizes, Spaces } from "../../styles/Sizes";
-import { Breakpoints } from "../../styles/breakpoints";
+import { colors } from "../../styles/colors";
+import { fontsSizes, spaces } from "../../styles/sizes";
+import { breakpoints } from "../../styles/breakpoints";
 
 export const HeaderStyled = styled.header`
     display: flex;
     justify-content: space-around;
-    padding: 0 ${Spaces.px_desktop_default};
+    padding: 0 ${spaces.px_desktop_default};
     align-items: center;
     flex-wrap: wrap;
-    background-color:${Colors.background_black};
+    background-color:${colors.background_black};
     height: 20vh;
     h1{
         margin: 0;
     }
 
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         padding-bottom: 0;
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         position: fixed;
         top:0;
         width:100%;
@@ -56,8 +56,8 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
         a{
             font-weight:600;
             font-family: 'LatoBold';
-            font-size: ${FontsSizes.nav_title_desktop};
-            color: ${Colors.platinum};
+            font-size: ${fontsSizes.nav_title_desktop};
+            color: ${colors.platinum};
             text-decoration: none;
             letter-spacing: 2px;
         }
@@ -65,12 +65,12 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
     
     li:hover a{
         transition: .3s;
-        color: ${Colors.orange_web};
-        border-bottom: 2px solid ${Colors.orange_web};
+        color: ${colors.orange_web};
+        border-bottom: 2px solid ${colors.orange_web};
         padding-bottom: 4px;
     }
 
-    @media ${Breakpoints.desktopXSM}{
+    @media ${breakpoints.desktopXSM}{
         gap: 1rem;
 
         li a {
@@ -78,7 +78,7 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
         }
     }
     
-    @media ${Breakpoints.mobile} {
+    @media ${breakpoints.mobile} {
         transition: .6s;
         flex-direction: column;
         gap: 12px;
@@ -88,18 +88,18 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
         top:80px;
         right: ${props => props.$isOpen ? '-32px' : '-250px' };
         display: flex;
-        background: ${Colors.background_black};
+        background: ${colors.background_black};
         padding: 0 52px 0 12px;
         align-items: start;
         justify-content: center;
         
         li{
             a{
-                color: ${Colors.platinum};
+                color: ${colors.platinum};
                 font-size: 1rem;
             }
             a:hover{        
-                color: ${Colors.platinum};
+                color: ${colors.platinum};
                 border-bottom: none;
                 padding-bottom: 0;
             }
@@ -115,10 +115,10 @@ export const MenuBtn = styled.button< {$isOpen? : boolean} >`
     .icone{
         height: 60px;
         width: 60px;
-        color: ${props => props.$isOpen ? `${Colors.orange_web}` : `${Colors.platinum}`};
+        color: ${props => props.$isOpen ? `${colors.orange_web}` : `${colors.platinum}`};
     }
 
-    @media ${Breakpoints.mobile}{
+    @media ${breakpoints.mobile}{
         display: block;
     }
 `
