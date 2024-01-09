@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import img from '../../assets/wave_background.png'
-import { colors } from "../../styles/colors";
+import { colorsVar } from "../../styles/colors";
 
 export const FooterStyled = styled.footer`
     width: 100%;
@@ -13,7 +13,7 @@ export const FooterStyled = styled.footer`
 
     h3{
         font-size: 1.1rem;
-        color: ${colors.platinum};
+        color: ${colorsVar.platinum};
         letter-spacing: 2px;
         margin: 0;       
     }
@@ -26,18 +26,18 @@ export const SocialMediaStyled = styled.div`
     justify-content: center;
     align-items: center;
     .icone{
-        color: ${colors.platinum};
+        color: ${colorsVar.platinum};
         border-radius: 50%;
         padding: 8px;
         width: 18px;
         height: 18px;
-        border: 1px solid ${colors.platinum};
+        border: 1px solid ${colorsVar.platinum};
         transition: .3s;
         cursor: pointer;
     }
     
     .icone:hover{
-        background-color: ${colors.background_black_opacity};
+        background-color: ${colorsVar.background_black_opacity};
     }
 `
 

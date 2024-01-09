@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { breakpoints } from "../../../styles/breakpoints";
-import { colors } from "../../../styles/colors";
-import { Spaces } from "../../../styles/sizes";
+import { colorsVar } from "../../../styles/colors";
+import { spaces } from "../../../styles/sizes";
 import Background from '../../../assets/background-about.png'
 
 export const DescriptionContainer = styled.section`
-    padding: 0 ${Spaces.px_desktop_default};
+    padding: 0 ${spaces.px_desktop_default};
     position: relative;
     top: 0;
     min-height: 80vh;
@@ -61,7 +61,7 @@ export const ParagraphStyled = styled.p`
     line-height: 1.5;
     font-size: 18px;
     letter-spacing: 1px;
-    color: ${colors.text_black};
+    color: ${colorsVar.text_black};
     text-align:justify;
     font-weight: 600;
     max-width: 600px;

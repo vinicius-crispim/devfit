@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../../styles/colors";
+import { colorsVar } from "../../../styles/colors";
 import { breakpoints } from "../../../styles/breakpoints";
 
 export const SliderContainer = styled.section`
@@ -54,8 +54,8 @@ export const ButtonSlide = styled.button`
     justify-content: center;
     cursor: pointer;
     padding: 10px;
-    color: ${colors.black};
-    border: 1px solid ${colors.black};
+    color: ${colorsVar.black};
+    border: 1px solid ${colorsVar.black};
     border-radius: 50%;
     font-size: 22px;
     transition: background 0.3s;

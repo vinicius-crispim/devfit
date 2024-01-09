@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/sizes";
-import { colors } from "../../../styles/colors";
+import { spaces } from "../../../styles/sizes";
+import { colorsVar } from "../../../styles/colors";
 import { breakpoints } from "../../../styles/breakpoints";
 
 
 export const PlansSection = styled.section`
-    padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
+    padding: ${spaces.py_default} ${spaces.px_desktop_default};
 `
 
 export const PlansContainer = styled.div`
@@ -13,7 +13,7 @@ export const PlansContainer = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    color: ${colors.text_black};
+    color: ${colorsVar.text_black};
     gap:44px;
 `
 
@@ -25,8 +25,8 @@ export const PlanCard = styled.div`
     justify-content: center;
     flex-direction: column;
     border: 0 solid transparent;
-    background-color: ${colors.background_gray};
-    box-shadow: ${colors.black} 4px 4px 8px;
+    background-color: ${colorsVar.background_gray};
+    box-shadow: ${colorsVar.black} 4px 4px 8px;
     border-radius: 16px;
 
     .plan-info{
@@ -37,7 +37,7 @@ export const PlanCard = styled.div`
     }
 
     h3{
-        background-color: ${colors.orange_web};
+        background-color: ${colorsVar.orange_web};
         width:100%;
         padding: 8px 0;
         margin: 0;

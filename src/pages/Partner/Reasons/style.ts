@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/sizes";
-import { colors } from "../../../styles/colors";
+import { spaces } from "../../../styles/sizes";
+import { colorsVar } from "../../../styles/colors";
 import { breakpoints } from "../../../styles/breakpoints";
 
 
 export const ReasonsStyled = styled.section`
-    padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
+    padding: ${spaces.py_default} ${spaces.px_desktop_default};
     padding-top: 0;
     @media ${breakpoints.desktopXSM}{
-        padding: ${Spaces.py_default} ${Spaces.px_desktopXSM_default};
+        padding: ${spaces.py_default} ${spaces.px_desktopXSM_default};
     }
 `
 export const ReasonsContainerStyled = styled.section`
@@ -53,7 +53,7 @@ export const ReaonsList = styled.ul`
         }
         
         svg{
-            color: ${colors.graph_green};
+            color: ${colorsVar.graph_green};
             
         }
     }

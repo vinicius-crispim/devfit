@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/sizes";
-import { colors } from "../../../styles/colors";
+import { spaces } from "../../../styles/sizes";
+import { colorsVar } from "../../../styles/colors";
 import { breakpoints } from "../../../styles/breakpoints";
 
 export const FeaturesContainer = styled.section`
-    padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
+    padding: ${spaces.py_default} ${spaces.px_desktop_default};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +36,7 @@ export const FeaturesList_Item = styled.li<{$direction?: boolean; }>`
     h3{ 
         text-align: center;
         margin: 0;
-        color: ${colors.orange_web};
+        color: ${colorsVar.orange_web};
         font-size: 28px;
         filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.4));
 

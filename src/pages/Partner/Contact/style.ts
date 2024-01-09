@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/sizes";
-import { colors } from "../../../styles/colors";
+import { spaces } from "../../../styles/sizes";
+import { colorsVar } from "../../../styles/colors";
 import { breakpoints } from "../../../styles/breakpoints";
 
 
 export const ContactSection = styled.section`
-    padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
+    padding: ${spaces.py_default} ${spaces.px_desktop_default};
 
     p{
         font-size: 20px;
@@ -15,7 +15,7 @@ export const ContactSection = styled.section`
     }
 
     @media ${breakpoints.desktopXSM}{
-        padding: ${Spaces.py_default} ${Spaces.px_desktopXSM_default};
+        padding: ${spaces.py_default} ${spaces.px_desktopXSM_default};
     }
 `
 
@@ -58,7 +58,7 @@ export const ContactFormLabel = styled.label`
 
 export const ContactFormInput = styled.input`
     margin-bottom: 12px;
-    box-shadow: 3px 3px 8px ${colors.background_black};
+    box-shadow: 3px 3px 8px ${colorsVar.background_black};
     padding: 8px 12px;
     border-radius: 8px;
     outline: none;
@@ -74,7 +74,7 @@ export const ContactFormTextArea = styled.textarea`
     border-radius: 8px;
     outline:none;
     border-width:1px;
-    box-shadow: 3px 3px 8px ${colors.background_black};
+    box-shadow: 3px 3px 8px ${colorsVar.background_black};
     `
 
 export const ContactFormButton = styled.button`
@@ -86,13 +86,13 @@ export const ContactFormButton = styled.button`
     border: transparent;
     color: white;
     letter-spacing: 4px;
-    background-color: ${colors.red_button};
-    box-shadow: 2px 2px 6px ${colors.red_button_hover};
+    background-color: ${colorsVar.red_button};
+    box-shadow: 2px 2px 6px ${colorsVar.red_button_hover};
 
     &:hover{
         transition: .5s;
         letter-spacing: 6px;
-        background-color: ${colors.red_button_hover};
+        background-color: ${colorsVar.red_button_hover};
         cursor: pointer;
     }
 `

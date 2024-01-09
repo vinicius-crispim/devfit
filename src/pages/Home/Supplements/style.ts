@@ -1,17 +1,17 @@
 import styled from 'styled-components';
-import { Spaces } from '../../../styles/sizes';
-import { colors } from '../../../styles/colors';
+import { spaces } from '../../../styles/sizes';
+import { colorsVar } from '../../../styles/colors';
 import { breakpoints } from '../../../styles/breakpoints';
 
 export const SuplementSection = styled.section`
-    padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
-    background-color: ${colors.background_white};
+    padding: ${spaces.py_default} ${spaces.px_desktop_default};
+    background-color: ${colorsVar.background_white};
     display: flex;
     flex-direction: column;
     align-items: center;
 
     @media ${breakpoints.desktopXSM}{
-        padding: ${Spaces.py_default} ${Spaces.px_desktopXSM_default};
+        padding: ${spaces.py_default} ${spaces.px_desktopXSM_default};
     }
 `
 
@@ -20,7 +20,7 @@ export const ParagraphStyled = styled.p`
     text-align:center;
     font-size: 22px;
     letter-spacing: 2px;
-    color: ${colors.text_black};
+    color: ${colorsVar.text_black};
 `
 
 export const SuplementsContainer = styled.div`
@@ -43,24 +43,24 @@ export const InputStyled = styled.div`
     align-items: center;
     width: 100%;
     input{
-        border: 1px solid ${colors.background_black};
+        border: 1px solid ${colorsVar.background_black};
         border-radius: 8px;
         padding: 8px 12px;
         font-size: 20px;
         margin: 20px;
         width: 100%;
-        background-color: ${colors.background_gray};
-        color: ${colors.text_black};
+        background-color: ${colorsVar.background_gray};
+        color: ${colorsVar.text_black};
         font-weight: 600;
         font-family: 'LatoBold';
         outline: none;
 
         &::placeholder{
-            color: ${colors.text_black};
+            color: ${colorsVar.text_black};
         }
 
         &:focus{
-            border: 1px solid ${colors.dark_orange_web};
+            border: 1px solid ${colorsVar.dark_orange_web};
         }
     }
 
@@ -68,7 +68,7 @@ export const InputStyled = styled.div`
         position: absolute;
         right: 32px;
         font-size: 24px;
-        color: ${colors.dark_orange_web};
+        color: ${colorsVar.dark_orange_web};
     }
     
     @media ${breakpoints.mobile} {
@@ -104,8 +104,8 @@ export const SuplementItem= styled.li`
     align-items:center;
     border-radius: 8px;
     border: 0 solid transparent;
-    box-shadow: ${colors.black} 4px 4px 8px;
-    background-color: ${colors.background_gray};
+    box-shadow: ${colorsVar.black} 4px 4px 8px;
+    background-color: ${colorsVar.background_gray};
     max-height: 700px;
 
     &:not(:first-child){
@@ -135,7 +135,7 @@ export const SuplementItem= styled.li`
             line-height: 1.3;
         }
         h3{
-            background-color: ${colors.orange_web};
+            background-color: ${colorsVar.orange_web};
             width: 100%;
             height: auto;
             margin-bottom: 8px;
@@ -209,15 +209,15 @@ export const ShowMoreBtn = styled.button`
     padding: 8px 12px;
     border-radius: 12px;
     border: 1px solid black;
-    box-shadow: 2px 2px 4px ${colors.background_black};
+    box-shadow: 2px 2px 4px ${colorsVar.background_black};
     margin: 24px 0;
     transition: .3s;
     cursor: pointer;
     font-size: 18px;
-    background-color: ${colors.background_gray};
+    background-color: ${colorsVar.background_gray};
     letter-spacing: 1px;
     &:hover{
-        background-color: ${colors.background_gray};
+        background-color: ${colorsVar.background_gray};
         letter-spacing: 2px;
         font-size: 22px;
     }

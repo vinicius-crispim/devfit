@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles/colors";
+import { colorsVar } from "../../styles/colors";
 import { fontsSizes, spaces } from "../../styles/sizes";
 import { breakpoints } from "../../styles/breakpoints";
 
@@ -9,7 +9,7 @@ export const HeaderStyled = styled.header`
     padding: 0 ${spaces.px_desktop_default};
     align-items: center;
     flex-wrap: wrap;
-    background-color:${colors.background_black};
+    background-color:${colorsVar.background_black};
     height: 20vh;
     h1{
         margin: 0;
@@ -57,7 +57,7 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
             font-weight:600;
             font-family: 'LatoBold';
             font-size: ${fontsSizes.nav_title_desktop};
-            color: ${colors.platinum};
+            color: ${colorsVar.platinum};
             text-decoration: none;
             letter-spacing: 2px;
         }
@@ -65,8 +65,8 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
     
     li:hover a{
         transition: .3s;
-        color: ${colors.orange_web};
-        border-bottom: 2px solid ${colors.orange_web};
+        color: ${colorsVar.orange_web};
+        border-bottom: 2px solid ${colorsVar.orange_web};
         padding-bottom: 4px;
     }
 
@@ -88,18 +88,18 @@ export const ListStyled = styled.ul<{ $isOpen?: boolean; }>`
         top:80px;
         right: ${props => props.$isOpen ? '-32px' : '-250px' };
         display: flex;
-        background: ${colors.background_black};
+        background: ${colorsVar.background_black};
         padding: 0 52px 0 12px;
         align-items: start;
         justify-content: center;
         
         li{
             a{
-                color: ${colors.platinum};
+                color: ${colorsVar.platinum};
                 font-size: 1rem;
             }
             a:hover{        
-                color: ${colors.platinum};
+                color: ${colorsVar.platinum};
                 border-bottom: none;
                 padding-bottom: 0;
             }
@@ -115,7 +115,7 @@ export const MenuBtn = styled.button< {$isOpen? : boolean} >`
     .icone{
         height: 60px;
         width: 60px;
-        color: ${props => props.$isOpen ? `${colors.orange_web}` : `${colors.platinum}`};
+        color: ${props => props.$isOpen ? `${colorsVar.orange_web}` : `${colorsVar.platinum}`};
     }
 
     @media ${breakpoints.mobile}{

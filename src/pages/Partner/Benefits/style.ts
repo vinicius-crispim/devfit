@@ -1,16 +1,16 @@
 import styled from "styled-components";
-import { Spaces } from "../../../styles/sizes";
+import { spaces } from "../../../styles/sizes";
 import { breakpoints } from "../../../styles/breakpoints";
-import { colors } from "../../../styles/colors";
+import { colorsVar } from "../../../styles/colors";
 
 export const BenefitsContainer = styled.section`
-    padding: ${Spaces.py_default} ${Spaces.px_desktop_default};
+    padding: ${spaces.py_default} ${spaces.px_desktop_default};
     display: flex;
     flex-direction: column;
     align-items: center;
     
     @media ${breakpoints.desktopXSM}{
-        padding: ${Spaces.py_default} ${Spaces.px_desktopXSM_default};
+        padding: ${spaces.py_default} ${spaces.px_desktopXSM_default};
     }
     `
 
@@ -25,7 +25,7 @@ export const BenefitsList = styled.ul`
 
     /* Firefox */ 
    scrollbar-width: thin;
-    scrollbar-color: ${colors.white} ${colors.black};
+    scrollbar-color: ${colorsVar.white} ${colorsVar.black};
     
     /* Chrome, Edge e Safari */
     &::-webkit-scrollbar {
@@ -35,7 +35,7 @@ export const BenefitsList = styled.ul`
     &::-webkit-scrollbar-track {
       background: white;
       border-radius: 10px;
-      box-shadow:  0 0 10px ${colors.black};
+      box-shadow:  0 0 10px ${colorsVar.black};
       
     }
     
@@ -77,13 +77,13 @@ export const BenefitsCard = styled.div`
     justify-content: center;
     flex-direction: column;
     border: 0 solid transparent;
-    background-color: ${colors.background_gray};
-    box-shadow: ${colors.black} 4px 4px 8px;
+    background-color: ${colorsVar.background_gray};
+    box-shadow: ${colorsVar.black} 4px 4px 8px;
     border-radius: 16px;
 
 
     h3{
-        background-color: ${colors.orange_web};
+        background-color: ${colorsVar.orange_web};
         width:100%;
         padding: 8px 0;
         margin: 0;
