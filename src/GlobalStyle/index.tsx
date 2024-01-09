@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import { colors } from "../styles/colors";
 import LatoRegular from '../styles/fonts/Lato-Regular.ttf';
 import LatoBold from '../styles/fonts/Lato-Bold.ttf';
 
@@ -21,8 +20,8 @@ const GlobalStyle = createGlobalStyle`
       font-family: 'LatoRegular', 'sans-serif';
       margin: 0;
       min-height: 100vh;
-      color: ${colors.black};
-      background-color: ${colors.background_white};
+      color: #100c08;
+      background-color: #F9F9F5;
     }
     main {
       display: block;
